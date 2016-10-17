@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <h1><%= title %></h1>    
+    
+    <form id="searchbox" action="/location/locations/" method="Get">
+        
+        <input id="search1" type="text" placeholder="Type name">
+        <input id="submit1" type="submit" name="btnLocations" value="Search by name"><br><br>
+        
+        
+        <input type="radio" name="catagory" value="cafe" checked> Cafe
+        <input type="radio" name="catagory" value="restaurant"> Restaurant<br>
+        <input  type="hiden" name="longitude" value="" placeholder="Longitude">
+        <input  type="hiden" name="latitude" value="" placeholder="latitude" >
+        
+        <input id="submit2" type="submit" name="btnLocations" value="Search by catagory">
+    </form>
+    
+    <script src='/javascripts/clientGeo.js'></script>
+  </body>
+  
+</html>
